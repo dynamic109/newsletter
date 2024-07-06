@@ -3,49 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Article</title>
+
+    <title>newsletter</title>
   </head>
   <body>
-    <main>
-      <img src="./images/drawers.jpg" class="image-drawer" />
-      <div>
-        <div class="text-container">
-          <h1>
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h1>
-          <p>
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-        </div>
-        <div class="footer">
-          <footer id="footer">
-            <div class="user-info">
-              <img class="user-icon" src="./images/avatar-michelle.jpg" />
-              <div class="user">
-                <h2>Michelle Appleton</h2>
-                <p>28 Jun 2020</p>
-              </div>
-            </div>
-            <img
-              id="share-icon"
-              class="share-icon"
-              src="./images/icon-share.svg"
-            />
-          </footer>
-        </div>
+    <div id="newsletter-container" class="newsletter-container">
+      <div class="details-container first-container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form id="form" novalidate>
+          <div class="email-label">
+            <label for="email">Email address</label>
+            <span id="message"></span>
+          </div>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@company.com"
+          />
+          <button id="submit-btn">Subscribe to monthly newsletter</button>
+        </form>
       </div>
-    </main>
+      <div class="image-container second-container">
+        <img
+          id="illustration-sign-up"
+          alt="image illustration of sign up"
+          src="./images/illustration-sign-up-desktop.svg"
+        />
+      </div>
+    </div>
+    <div id="success"></div>
+    <div id="spinner"></div>
   </body>
 
-  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </html>
